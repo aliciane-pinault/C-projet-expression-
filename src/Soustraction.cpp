@@ -24,3 +24,10 @@ void Soustraction::Afficher(){
     _operandeDroit->afficher();
     cout << ")";
 }
+
+void Soustraction::afficherNPI() {
+  /*_operandeGauche->afficherNPI();
+  cout << " ";
+ _operandeDroit->afficherNPI();
+ cout << "-";*/
+}

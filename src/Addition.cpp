@@ -21,3 +21,10 @@ void Addition::Afficher(){
     _operandeDroit->afficher();
     cout << ")";
 }
+
+void Addition::afficherNPI() {
+    /*_operandeGauche->afficherNPI();
+    cout << " ";
+    _operandeDroit->afficherNPI();
+    cout << "+";*/
+}

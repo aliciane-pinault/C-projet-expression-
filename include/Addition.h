@@ -12,6 +12,7 @@ class Addition : public Operateur
 
         void Afficher();
         float calculer();
+        void afficherNPI();
 
 
     protected:

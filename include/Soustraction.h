@@ -13,6 +13,7 @@ class Soustraction : public Operateur
 
         float calculer();
         void Afficher();
+        void afficherNPI();
 
 
     protected:

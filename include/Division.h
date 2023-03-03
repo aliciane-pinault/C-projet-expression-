@@ -13,6 +13,7 @@ class Division : public Operateur
 
         float calculer();
         void afficher();
+        void afficherNPI();
 
     protected:
 

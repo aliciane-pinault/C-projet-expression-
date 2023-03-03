@@ -22,3 +22,10 @@ void Division::afficher() {
     cout << "/";
     _operandeDroit->afficher();
 }
+
+void Division::afficherNPI() {
+    /*_operandeGauche->afficherNPI();
+    cout << " ";
+    _operandeDroit->afficherNPI();
+    cout << "/";*/
+}

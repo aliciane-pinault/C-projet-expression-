@@ -13,6 +13,7 @@ class Multiplication : public Operateur
 
         float calculer();
         void afficher();
+        void afficherNPI();
 
     protected:
 

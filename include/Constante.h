@@ -12,6 +12,7 @@ class Constante : public Expression
 
         float calculer();
         void afficher();
+        void afficherNPI();
 
 
     protected:
