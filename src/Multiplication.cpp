@@ -22,8 +22,8 @@ void Multiplication::afficher() {
 }
 
 void Multiplication::afficherNPI() {
-    /*_operandeGauche->afficherNPI();
+    _operandeGauche->afficherNPI();
     cout << " ";
     _operandeDroit->afficherNPI();
-    cout << "*";*/
+    cout << "*";
 }

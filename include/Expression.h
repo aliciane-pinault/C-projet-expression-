@@ -10,6 +10,7 @@ class Expression
 
         virtual float calculer() =0;
         virtual void afficher() =0;
+        virtual void afficherNPI() =0;
 
 
     protected:
