@@ -57,3 +57,57 @@
 	"Operateur.h"
 	<iostream>
 
+1677855234 source:d:\isen\m1\s2\poo-c++\projet\project-ap-am\src\opunit.cpp
+	"Opunit.h"
+
+1677855185 d:\isen\m1\s2\poo-c++\projet\project-ap-am\include\opunit.h
+	<Expression.h>
+
+1677855388 source:d:\isen\m1\s2\poo-c++\projet\project-ap-am\src\puissance.cpp
+	"Puissance.h"
+
+1677855465 d:\isen\m1\s2\poo-c++\projet\project-ap-am\include\puissance.h
+	<Operateur.h>
+
+1677855625 source:d:\isen\m1\s2\poo-c++\projet\project-ap-am\src\carre.cpp
+	"Carre.h"
+
+1677855625 d:\isen\m1\s2\poo-c++\projet\project-ap-am\include\carre.h
+	<OperateurUnaire.h>
+
+1677855625 d:\isen\m1\s2\poo-c++\projet\project-ap-am\include\operateurunaire.h
+	<Expression.h>
+
+1677855625 source:d:\isen\m1\s2\poo-c++\projet\project-ap-am\src\inverse.cpp
+	"Inverse.h"
+
+1677855625 d:\isen\m1\s2\poo-c++\projet\project-ap-am\include\inverse.h
+	<OperateurUnaire.h>
+
+1677855625 source:d:\isen\m1\s2\poo-c++\projet\project-ap-am\src\lognep.cpp
+	"Lognep.h"
+
+1677855625 d:\isen\m1\s2\poo-c++\projet\project-ap-am\include\lognep.h
+	<OperateurUnaire.h>
+
+1677855625 source:d:\isen\m1\s2\poo-c++\projet\project-ap-am\src\operateurunaire.cpp
+	"OperateurUnaire.h"
+
+1677855625 source:d:\isen\m1\s2\poo-c++\projet\project-ap-am\src\oppose.cpp
+	"Oppose.h"
+
+1677855625 d:\isen\m1\s2\poo-c++\projet\project-ap-am\include\oppose.h
+	<OperateurUnaire.h>
+
+1677855625 source:d:\isen\m1\s2\poo-c++\projet\project-ap-am\src\racinecar.cpp
+	"RacineCar.h"
+
+1677855625 d:\isen\m1\s2\poo-c++\projet\project-ap-am\include\racinecar.h
+	<OperateurUnaire.h>
+
+1677855625 source:d:\isen\m1\s2\poo-c++\projet\project-ap-am\src\valeurabs.cpp
+	"Valeurabs.h"
+
+1677855625 d:\isen\m1\s2\poo-c++\projet\project-ap-am\include\valeurabs.h
+	<OperateurUnaire.h>
+
