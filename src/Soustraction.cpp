@@ -27,7 +27,7 @@ void Soustraction::Afficher(){
 
 void Soustraction::afficherNPI() {
   /*_operandeGauche->afficherNPI();
-  cout << " ";
- _operandeDroit->afficherNPI();
- cout << "-";*/
+    cout << " ";
+    _operandeDroit->afficherNPI();
+    cout << "-";*/
 }
