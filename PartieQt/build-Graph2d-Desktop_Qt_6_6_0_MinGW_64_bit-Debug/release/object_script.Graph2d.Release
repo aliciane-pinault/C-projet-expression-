@@ -1,0 +1,10 @@
+release/main.o
+release/mainwindow.o
+release/Expression.o
+release/Constante.o
+release/Addition.o
+release/Division.o
+release/Multiplication.o
+release/Operateur.o
+release/Soustraction.o
+release/moc_mainwindow.o
