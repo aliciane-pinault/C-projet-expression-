@@ -1,3 +1,3 @@
-# C-projet-expression-
-# C-projet-expression-
-# C-projet-expression-
+# C++ projet expression
+
+By Aliciane PINAULT & Yannis MOUTON (ISEN students)
