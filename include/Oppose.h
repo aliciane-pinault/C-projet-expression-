@@ -10,6 +10,10 @@ class Oppose : public OperateurUnaire
         Oppose(Expression*opu);
         virtual ~Oppose();
 
+        void afficher() override;
+        float calculer() override;
+        void afficherNPI() override;
+
     protected:
 
     private:

@@ -10,6 +10,10 @@ class Inverse : public OperateurUnaire
         Inverse(Expression*opu);
         virtual ~Inverse();
 
+        void afficher() override;
+        float calculer() override;
+        void afficherNPI() override;
+
     protected:
 
     private:

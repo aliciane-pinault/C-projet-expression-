@@ -10,6 +10,10 @@ class Puissance : public Operateur
         Puissance(Expression *e1, Expression *e2);
         virtual ~Puissance();
 
+        void afficher() override;
+        float calculer() override;
+        void afficherNPI() override;
+
     protected:
 
     private:

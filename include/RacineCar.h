@@ -10,6 +10,10 @@ class RacineCar : public OperateurUnaire
         RacineCar(Expression*opu);
         virtual ~RacineCar();
 
+        void afficher() override;
+        float calculer() override;
+        void afficherNPI() override;
+
     protected:
 
     private:

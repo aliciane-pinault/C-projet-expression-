@@ -10,6 +10,10 @@ class Valeurabs : public OperateurUnaire
         Valeurabs(Expression*opu);
         virtual ~Valeurabs();
 
+        void afficher() override;
+        float calculer() override;
+        void afficherNPI() override;
+
     protected:
 
     private:

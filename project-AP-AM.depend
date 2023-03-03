@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1677850499 source:d:\isen\m1\s2\poo-c++\projet\project-ap-am\main.cpp
+1677860126 source:d:\isen\m1\s2\poo-c++\projet\project-ap-am\main.cpp
 	<iostream>
 	"Multiplication.h"
 	"Addition.h"
@@ -8,8 +8,15 @@
 	"Expression.h"
 	"Operateur.h"
 	"Soustraction.h"
+	"OperateurUnaire.h"
+	"Puissance.h"
+	"Carre.h"
+	"Inverse.h"
+	"Oppose.h"
+	"Lognep.h"
+	"RacineCar.h"
 
-1677850832 source:d:\isen\m1\s2\poo-c++\projet\project-ap-am\src\division.cpp
+1677857294 source:d:\isen\m1\s2\poo-c++\projet\project-ap-am\src\division.cpp
 	"Division.h"
 	<iostream>
 
@@ -25,14 +32,14 @@
 	"Expression.h"
 	<iostream>
 
-1677850832 source:d:\isen\m1\s2\poo-c++\projet\project-ap-am\src\soustraction.cpp
+1677857167 source:d:\isen\m1\s2\poo-c++\projet\project-ap-am\src\soustraction.cpp
 	"Soustraction.h"
 	<iostream>
 
 1677850075 d:\isen\m1\s2\poo-c++\projet\project-ap-am\include\soustraction.h
 	<Operateur.h>
 
-1677850147 source:d:\isen\m1\s2\poo-c++\projet\project-ap-am\src\constante.cpp
+1677857131 source:d:\isen\m1\s2\poo-c++\projet\project-ap-am\src\constante.cpp
 	"Constante.h"
 	<iostream>
 
@@ -45,11 +52,11 @@
 1677850043 d:\isen\m1\s2\poo-c++\projet\project-ap-am\include\addition.h
 	<Operateur.h>
 
-1677850832 source:d:\isen\m1\s2\poo-c++\projet\project-ap-am\src\addition.cpp
+1677857120 source:d:\isen\m1\s2\poo-c++\projet\project-ap-am\src\addition.cpp
 	"Addition.h"
 	<iostream>
 
-1677850832 source:d:\isen\m1\s2\poo-c++\projet\project-ap-am\src\multiplication.cpp
+1677857140 source:d:\isen\m1\s2\poo-c++\projet\project-ap-am\src\multiplication.cpp
 	"Multiplication.h"
 	<iostream>
 
@@ -63,51 +70,63 @@
 1677855185 d:\isen\m1\s2\poo-c++\projet\project-ap-am\include\opunit.h
 	<Expression.h>
 
-1677855388 source:d:\isen\m1\s2\poo-c++\projet\project-ap-am\src\puissance.cpp
+1677857660 source:d:\isen\m1\s2\poo-c++\projet\project-ap-am\src\puissance.cpp
 	"Puissance.h"
+	<math.h>
+	<iostream>
 
-1677855465 d:\isen\m1\s2\poo-c++\projet\project-ap-am\include\puissance.h
+1677856531 d:\isen\m1\s2\poo-c++\projet\project-ap-am\include\puissance.h
 	<Operateur.h>
 
-1677855625 source:d:\isen\m1\s2\poo-c++\projet\project-ap-am\src\carre.cpp
+1677858543 source:d:\isen\m1\s2\poo-c++\projet\project-ap-am\src\carre.cpp
 	"Carre.h"
+	<math.h>
+	<iostream>
 
-1677855625 d:\isen\m1\s2\poo-c++\projet\project-ap-am\include\carre.h
+1677858338 d:\isen\m1\s2\poo-c++\projet\project-ap-am\include\carre.h
 	<OperateurUnaire.h>
 
 1677855625 d:\isen\m1\s2\poo-c++\projet\project-ap-am\include\operateurunaire.h
 	<Expression.h>
 
-1677855625 source:d:\isen\m1\s2\poo-c++\projet\project-ap-am\src\inverse.cpp
+1677858984 source:d:\isen\m1\s2\poo-c++\projet\project-ap-am\src\inverse.cpp
 	"Inverse.h"
+	<iostream>
 
-1677855625 d:\isen\m1\s2\poo-c++\projet\project-ap-am\include\inverse.h
+1677858848 d:\isen\m1\s2\poo-c++\projet\project-ap-am\include\inverse.h
 	<OperateurUnaire.h>
 
-1677855625 source:d:\isen\m1\s2\poo-c++\projet\project-ap-am\src\lognep.cpp
+1677859385 source:d:\isen\m1\s2\poo-c++\projet\project-ap-am\src\lognep.cpp
 	"Lognep.h"
+	<math.h>
+	<iostream>
 
-1677855625 d:\isen\m1\s2\poo-c++\projet\project-ap-am\include\lognep.h
+1677859262 d:\isen\m1\s2\poo-c++\projet\project-ap-am\include\lognep.h
 	<OperateurUnaire.h>
 
 1677855625 source:d:\isen\m1\s2\poo-c++\projet\project-ap-am\src\operateurunaire.cpp
 	"OperateurUnaire.h"
 
-1677855625 source:d:\isen\m1\s2\poo-c++\projet\project-ap-am\src\oppose.cpp
+1677859222 source:d:\isen\m1\s2\poo-c++\projet\project-ap-am\src\oppose.cpp
 	"Oppose.h"
+	<iostream>
 
-1677855625 d:\isen\m1\s2\poo-c++\projet\project-ap-am\include\oppose.h
+1677859019 d:\isen\m1\s2\poo-c++\projet\project-ap-am\include\oppose.h
 	<OperateurUnaire.h>
 
-1677855625 source:d:\isen\m1\s2\poo-c++\projet\project-ap-am\src\racinecar.cpp
+1677860151 source:d:\isen\m1\s2\poo-c++\projet\project-ap-am\src\racinecar.cpp
 	"RacineCar.h"
+	<math.h>
+	<iostream>
 
-1677855625 d:\isen\m1\s2\poo-c++\projet\project-ap-am\include\racinecar.h
+1677859943 d:\isen\m1\s2\poo-c++\projet\project-ap-am\include\racinecar.h
 	<OperateurUnaire.h>
 
-1677855625 source:d:\isen\m1\s2\poo-c++\projet\project-ap-am\src\valeurabs.cpp
+1677860271 source:d:\isen\m1\s2\poo-c++\projet\project-ap-am\src\valeurabs.cpp
 	"Valeurabs.h"
+	<math.h>
+	<iostream>
 
-1677855625 d:\isen\m1\s2\poo-c++\projet\project-ap-am\include\valeurabs.h
+1677860173 d:\isen\m1\s2\poo-c++\projet\project-ap-am\include\valeurabs.h
 	<OperateurUnaire.h>
 

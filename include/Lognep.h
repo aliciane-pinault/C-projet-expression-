@@ -10,6 +10,10 @@ class Lognep : public OperateurUnaire
         Lognep(Expression*opu);
         virtual ~Lognep();
 
+        void afficher() override;
+        float calculer() override;
+        void afficherNPI() override;
+
     protected:
 
     private:

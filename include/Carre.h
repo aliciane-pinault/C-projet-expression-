@@ -10,6 +10,10 @@ class Carre : public OperateurUnaire
         Carre(Expression*opu);
         virtual ~Carre();
 
+        void afficher() override;
+        float calculer() override;
+        void afficherNPI() override;
+
     protected:
 
     private:
