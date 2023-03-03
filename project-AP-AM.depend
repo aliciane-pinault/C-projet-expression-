@@ -1,0 +1,59 @@
+# depslib dependency file v1.0
+1677839986 source:d:\isen\m1\s2\poo-c++\projet\project-ap-am\main.cpp
+	<iostream>
+	"Multiplication.h"
+	"Addition.h"
+	"Constante.h"
+	"Division.h"
+	"Expression.h"
+	"Operateur.h"
+	"Soustraction.h"
+
+1677840608 source:d:\isen\m1\s2\poo-c++\projet\project-ap-am\src\division.cpp
+	"Division.h"
+	<iostream>
+
+1677840373 d:\isen\m1\s2\poo-c++\projet\project-ap-am\include\division.h
+	<Operateur.h>
+
+1677840608 d:\isen\m1\s2\poo-c++\projet\project-ap-am\include\operateur.h
+	<Expression.h>
+
+1677840207 d:\isen\m1\s2\poo-c++\projet\project-ap-am\include\expression.h
+
+1677840207 source:d:\isen\m1\s2\poo-c++\projet\project-ap-am\src\expression.cpp
+	"Expression.h"
+	<iostream>
+
+1677839570 source:d:\isen\m1\s2\poo-c++\projet\project-ap-am\src\soustraction.cpp
+	"Soustraction.h"
+	<iostream>
+
+1677840633 d:\isen\m1\s2\poo-c++\projet\project-ap-am\include\soustraction.h
+	<Operateur.h>
+
+1677840608 source:d:\isen\m1\s2\poo-c++\projet\project-ap-am\src\constante.cpp
+	"Constante.h"
+	<iostream>
+
+1677840373 d:\isen\m1\s2\poo-c++\projet\project-ap-am\include\constante.h
+	<Expression.h>
+
+1677840373 d:\isen\m1\s2\poo-c++\projet\project-ap-am\include\multiplication.h
+	<Operateur.h>
+
+1677840286 d:\isen\m1\s2\poo-c++\projet\project-ap-am\include\addition.h
+	<Operateur.h>
+
+1677840608 source:d:\isen\m1\s2\poo-c++\projet\project-ap-am\src\addition.cpp
+	"Addition.h"
+	<iostream>
+
+1677840608 source:d:\isen\m1\s2\poo-c++\projet\project-ap-am\src\multiplication.cpp
+	"Multiplication.h"
+	<iostream>
+
+1677840608 source:d:\isen\m1\s2\poo-c++\projet\project-ap-am\src\operateur.cpp
+	"Operateur.h"
+	<iostream>
+
