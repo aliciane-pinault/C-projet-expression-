@@ -27,10 +27,10 @@ int main(int argc, char *argv[]){
     Soustraction sou(&c4, &c5);
     Multiplication mul(&add, &sou);
 
-    for(float x = 0.0;x < 100.0;x+=0.1){
+    for(float x = -10.0;x < 10.0;x+=0.001){
         c1.setValue(x);
         c5.setValue(x);
-        series << QPoint(x,mul.calculer());
+        series << QPointF(x,mul.calculer());
     }
 
     QChart chart;
