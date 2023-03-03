@@ -17,7 +17,7 @@ float Constante::calculer() {
 }
 
 void Constante::afficher() {
-  cout << "resultat : " << _constante;
+  cout << _constante;
 }
 
 void Constante::afficherNPI() {

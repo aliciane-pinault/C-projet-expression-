@@ -17,7 +17,7 @@ float Soustraction::calculer() {
   return _operandeGauche->calculer() - _operandeDroit->calculer();
 }
 
-void Soustraction::Afficher(){
+void Soustraction::afficher(){
     cout << "(" ;
     _operandeGauche->afficher();
     cout << "-";
@@ -29,5 +29,5 @@ void Soustraction::afficherNPI() {
     _operandeGauche->afficherNPI();
     cout << " ";
     _operandeDroit->afficherNPI();
-    cout << "-";
+    cout << " - ";
 }

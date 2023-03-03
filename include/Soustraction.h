@@ -11,9 +11,9 @@ class Soustraction : public Operateur
         virtual ~Soustraction();
 
 
-        float calculer();
-        void Afficher();
-        void afficherNPI();
+        float calculer()override;
+        void afficher()override;
+        void afficherNPI()override;
 
 
     protected:

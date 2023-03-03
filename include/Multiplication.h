@@ -11,9 +11,9 @@ class Multiplication : public Operateur
         Multiplication(Expression *e1, Expression *e2);
         virtual ~Multiplication();
 
-        float calculer();
-        void afficher();
-        void afficherNPI();
+        float calculer()override;
+        void afficher()override;
+        void afficherNPI()override;
 
     protected:
 

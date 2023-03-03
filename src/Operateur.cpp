@@ -3,10 +3,10 @@
 using namespace std;
 
 
-Operateur::Operateur(Expression*opd, Expression*opg)
+Operateur::Operateur(Expression*opg, Expression*opd)
 {
-    _operandeDroit =opd;
     _operandeGauche =opg;
+    _operandeDroit =opd;
 }
 
 

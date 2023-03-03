@@ -10,9 +10,10 @@ class Addition : public Operateur
         Addition(Expression *e1, Expression *e2);
         virtual ~Addition();
 
-        void Afficher();
-        float calculer();
-        void afficherNPI();
+        void afficher() override;
+        float calculer() override;
+        void afficherNPI() override;
+
 
 
     protected:

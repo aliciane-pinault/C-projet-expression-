@@ -11,9 +11,9 @@ class Division : public Operateur
         Division(Expression *e1, Expression *e2);
         virtual ~Division();
 
-        float calculer();
-        void afficher();
-        void afficherNPI();
+        float calculer() override;
+        void afficher()override;
+        void afficherNPI()override;
 
     protected:
 

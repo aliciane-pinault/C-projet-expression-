@@ -14,7 +14,7 @@ float Addition::calculer() {
   return _operandeGauche->calculer() + _operandeDroit->calculer();
 }
 
-void Addition::Afficher(){
+void Addition::afficher(){
     cout << "(" ;
     _operandeGauche->afficher();
     cout << "+";
@@ -26,5 +26,5 @@ void Addition::afficherNPI() {
     _operandeGauche->afficherNPI();
     cout << " ";
     _operandeDroit->afficherNPI();
-    cout << "+";
+    cout << " + ";
 }

@@ -10,9 +10,9 @@ class Constante : public Expression
         Constante(float v);
         virtual ~Constante();
 
-        float calculer();
-        void afficher();
-        void afficherNPI();
+        float calculer() override;
+        void afficher() override;
+        void afficherNPI() override;
 
 
     protected:
