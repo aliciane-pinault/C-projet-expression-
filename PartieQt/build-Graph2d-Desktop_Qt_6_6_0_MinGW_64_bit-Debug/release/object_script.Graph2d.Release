@@ -1,3 +1,4 @@
+release/graph2d.o
 release/main.o
 release/mainwindow.o
 release/Expression.o

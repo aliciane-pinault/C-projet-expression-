@@ -14,6 +14,8 @@
 #include "include/Multiplication.h"
 #include "include/Division.h"
 
+#include "graph2d.h"
+
 QT_USE_NAMESPACE
 
 int main(int argc, char *argv[]){
@@ -27,7 +29,10 @@ int main(int argc, char *argv[]){
     Soustraction sou(&c4, &c5);
     Multiplication mul(&add, &sou);
 
-    for(float x = -10.0;x < 10.0;x+=0.001){
+    Constante x(0);
+    Multiplication x2(&x,&x);
+
+    /*for(float x = -10.0;x < 10.0;x+=0.001){
         c1.setValue(x);
         c5.setValue(x);
         series << QPointF(x,mul.calculer());
@@ -40,10 +45,13 @@ int main(int argc, char *argv[]){
     chart.setTitle("Graph 2d");
 
     QChartView chartView(&chart);
-    chartView.setRenderHint(QPainter::Antialiasing);
+    chartView.setRenderHint(QPainter::Antialiasing);*/
+    Graph2D graph(nullptr,&x2,&x);
+    graph.setInterval(-15.0,15.0);
+    graph.setExpression(&x);
 
     MainWindow w;
-    w.setCentralWidget(&chartView);
+    w.setCentralWidget(&graph);
     w.resize(400,300);
     w.show();
     return a.exec();

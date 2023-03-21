@@ -10,6 +10,7 @@ CONFIG += c++17
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    graph2d.cpp \
     main.cpp \
     mainwindow.cpp \
     src/Expression.cpp \
@@ -21,6 +22,7 @@ SOURCES += \
     src/Soustraction.cpp
 
 HEADERS += \
+    graph2d.h \
     mainwindow.h \
     include/Expression.h \
     include/Constante.h \
