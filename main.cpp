@@ -1,40 +1,99 @@
 #include <iostream>
-#include "Multiplication.h"
-#include "Addition.h"
-#include "Constante.h"
-#include "Division.h"
+#include <limits>
 #include "Expression.h"
-#include "Operateur.h"
-#include "Soustraction.h"
+#include "Carre.h"
+#include "Inverse.h"
+#include "Oppose.h"
+#include "Nombre.h"
+#include "ValeurAbsolue.h"
+#include "LogNep.h"
+#include "RacineCarree.h"
+#include "Puissance.h"
 
+void clearInputStream() {
+    std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+}
 
-using namespace std;
+int main() {
+    double nombre;
+    std::cout << "Entrez un nombre: ";
+    std::cin >> nombre;
 
-int main()
-{
-    cout << "Hello world!" << endl;
-    cout << endl;
+    Carre carre;
+    Inverse inverse;
+    Oppose oppose;
+    ValeurAbsolue valeur_absolue;
+    LogNep log_nep;
+    RacineCarree racine_carree;
+    Puissance puissance;
 
-    //(5/2 + 4) * (-3 - 20)
-    //5 2 / 4 + -3 20 - *
-    Constante c1(5), c2(2), c3(4), c4(-3), c5(20) ;
-    Division div(&c1, &c2);
-    Addition add(&div, &c3);
-    Soustraction sou(&c4, &c5);
-    Multiplication mul(&add, &sou);
+    int choix = -1;
 
-    cout << "affichage normale :"<<endl;
-    //add.afficher();
-    mul.afficher();
+    while (choix != 0) {
+        std::cout << "Choisissez une opération:\n";
+        std::cout << "1. Carré\n";
+        std::cout << "2. Inverse\n";
+        std::cout << "3. Opposé\n";
+        std::cout << "4. Valeur absolue\n";
+        std::cout << "5. Log népérien\n";
+        std::cout << "6. Racine carrée\n";
+        std::cout << "7. Puissance\n";
+        std::cout << "0. Quitter\n";
+        std::cout << "Votre choix: ";
+        std::cin >> choix;
 
-    cout << endl << endl;
+        Expression* expr = nullptr;
 
-    cout << "affichage NPI :"<<endl;
-    //add.afficherNPI();
-    mul.afficherNPI();
+        switch (choix) {
+            case 1:
+                expr = carre.calculer(Nombre(nombre));
+                break;
+            case 2:
+                expr = inverse.calculer(Nombre(nombre));
+                break;
+            case 3:
+                expr = oppose.calculer(Nombre(nombre));
+                break;
+            case 4:
+                expr = valeur_absolue.calculer(Nombre(nombre));
+                break;
+            case 5:
+                expr = log_nep.calculer(Nombre(nombre));
+                break;
+            case 6:
+                expr = racine_carree.calculer(Nombre(nombre));
+                break;
+            case 7:
+                double exposant;
+                std::cout << "Entrez un exposant: ";
+                std::cin >> exposant;
+                expr = puissance.calculer(Nombre(nombre), Nombre(exposant));
+                break;
+            case 0:
+                std::cout << "Au revoir !" << std::endl;
+                break;
+            default:
+                std::cout << "Choix invalide" << std::endl;
+        }
 
+        if (expr) {
+            std::cout << "Résultat: ";
+            expr->afficher();
+            std::cout << " = " << expr->calculer() << std::endl;
+            delete expr;
+        }
 
+        clearInputStream();
+    }
 
-    cout << endl;
     return 0;
 }
+
+
+
+
+
+
+
+
+

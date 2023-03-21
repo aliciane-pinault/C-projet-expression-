@@ -1,13 +1,11 @@
-#include "Expression.h"
-#include <iostream>
-using namespace std;
+// src/expression.cpp
 
-Expression::Expression()
-{
-    //ctor
+#include "expression.h"
+
+Expression::Expression(double valeur) : _valeur(valeur) {}
+
+double Expression::valeur() const {
+    return _valeur;
 }
 
-Expression::~Expression()
-{
-    //dtor
-}
+

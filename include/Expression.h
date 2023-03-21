@@ -1,22 +1,19 @@
-#ifndef EXPRESSION_H
-#define EXPRESSION_H
+// include/expression.h
 
+#pragma once
+#include <iostream>
 
-class Expression
-{
-    public:
-        Expression();
-        virtual ~Expression();
+class Expression {
+public:
+    virtual ~Expression() = default;
+    virtual double calculer() const = 0;
+    virtual void afficher() const = 0;
+    virtual void afficherNPI() const = 0;
+    double valeur() const;
 
-        virtual float calculer() =0;
-        virtual void afficher() =0;
-        virtual void afficherNPI() =0;
-
-
-    protected:
-
-
-    private:
+protected:
+    Expression(double valeur);
+    double _valeur;
 };
 
-#endif // EXPRESSION_H
+
