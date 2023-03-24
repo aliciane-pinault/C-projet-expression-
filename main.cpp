@@ -9,6 +9,10 @@
 #include "LogNep.h"
 #include "RacineCarree.h"
 #include "Puissance.h"
+#include "Addition.h"
+#include "Soustraction.h"
+#include "Multiplication.h"
+#include "Division.h"
 
 void clearInputStream() {
     std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
@@ -18,14 +22,6 @@ int main() {
     double nombre;
     std::cout << "Entrez un nombre: ";
     std::cin >> nombre;
-
-    Carre carre;
-    Inverse inverse;
-    Oppose oppose;
-    ValeurAbsolue valeur_absolue;
-    LogNep log_nep;
-    RacineCarree racine_carree;
-    Puissance puissance;
 
     int choix = -1;
 
@@ -38,41 +34,65 @@ int main() {
         std::cout << "5. Log népérien\n";
         std::cout << "6. Racine carrée\n";
         std::cout << "7. Puissance\n";
+        std::cout << "8. Addition\n";
+        std::cout << "9. Soustraction\n";
+        std::cout << "10. Multiplication\n";
+        std::cout << "11. Division\n";
         std::cout << "0. Quitter\n";
         std::cout << "Votre choix: ";
         std::cin >> choix;
 
         Expression* expr = nullptr;
+        double second_nombre;
 
         switch (choix) {
             case 1:
-                expr = carre.calculer(Nombre(nombre));
+                expr = Carre().calculer(Nombre(nombre));
                 break;
             case 2:
-                expr = inverse.calculer(Nombre(nombre));
+                expr = Inverse().calculer(Nombre(nombre));
                 break;
             case 3:
-                expr = oppose.calculer(Nombre(nombre));
+                expr = Oppose().calculer(Nombre(nombre));
                 break;
             case 4:
-                expr = valeur_absolue.calculer(Nombre(nombre));
+                expr = ValeurAbsolue().calculer(Nombre(nombre));
                 break;
             case 5:
-                expr = log_nep.calculer(Nombre(nombre));
+                expr = LogNep().calculer(Nombre(nombre));
                 break;
             case 6:
-                expr = racine_carree.calculer(Nombre(nombre));
+                expr = RacineCarree().calculer(Nombre(nombre));
                 break;
             case 7:
-                double exposant;
                 std::cout << "Entrez un exposant: ";
-                std::cin >> exposant;
-                expr = puissance.calculer(Nombre(nombre), Nombre(exposant));
+                std::cin >> second_nombre;
+                expr = Puissance().calculer(Nombre(nombre), Nombre(second_nombre));
+                break;
+            case 8:
+                std::cout << "Entrez un second nombre: ";
+                std::cin >> second_nombre;
+                expr = Addition().calculer(Nombre(nombre), Nombre(second_nombre));
+                break;
+            case 9:
+                std::cout << "Entrez un second nombre: ";
+                std::cin >> second_nombre;
+                expr = Soustraction().calculer(Nombre(nombre), Nombre(second_nombre));
+                break;
+            case 10:
+                std::cout << "Entrez un second nombre: ";
+                std::cin >> second_nombre;
+                expr = Multiplication().calculer(Nombre(nombre), Nombre(second_nombre));
+                break;
+            case 11:
+                std::cout << "Entrez un second nombre: ";
+                std::cin >> second_nombre;
+                expr = Division().calculer(Nombre(nombre), Nombre(second_nombre));
                 break;
             case 0:
                 std::cout << "Au revoir !" << std::endl;
                 break;
-            default:
+            default:            
                 std::cout << "Choix invalide" << std::endl;
         }
 
@@ -88,6 +108,12 @@ int main() {
 
     return 0;
 }
+
+               
+
+
+
+
 
 
 
