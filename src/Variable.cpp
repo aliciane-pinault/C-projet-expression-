@@ -62,30 +62,47 @@ Variable Variable::copy() const {
 void Variable::creerVariable(Variable* variables[], int& nb_variables) {
     char nom;
     float valeur;
-    cout << "Entrez le nom de la variable : ";
+
+    // Afficher la liste des variables existantes
+    cout << "Liste des variables existantes :\n";
+    for (int i = 0; i < nb_variables; i++) {
+        cout << "   - " << variables[i]->get_value() << variables[i]->get_name() << "\n";
+    }
+
+    // Demander à l'utilisateur de sélectionner une variable
+    cout << "Entrez le nom de la variable que vous souhaitez mettre a jour (ou entrez un nouveau nom pour creer une nouvelle variable) : ";
     cin >> nom;
-    cout << "Entrez la valeur de la variable : ";
-    cin >> valeur;
 
     // Vérifier si la variable existe déjà
+    int index = -1;
     for (int i = 0; i < nb_variables; i++) {
         if (variables[i]->get_name() == nom) {
-            cout << "La variable existe deja. Voulez-vous la remplacer (o/n) ? ";
-            char choix;
-            cin >> choix;
-            if (choix == 'o') {
-                variables[i]->set_variable(nom, valeur);
-                cout << "Variable mise a jour.\n";
-            }
-            return;
+            index = i;
+            break;
         }
     }
 
-    // Créer une nouvelle variable
-    Variable* nouvelleVariable = new Variable(nom, valeur);
-    variables[nb_variables] = nouvelleVariable;
-    nb_variables++;
-    cout << "Variable creee.\n";
+    // Mettre à jour ou créer une variable
+    if (index != -1) {
+        cout << "La variable existe deja. Voulez-vous la remplacer (o/n) ? ";
+        char choix;
+        cin >> choix;
+        if (choix == 'o') {
+            cout << "Entrez la nouvelle valeur de la variable : ";
+            cin >> valeur;
+            variables[index]->set_variable(nom, valeur);
+            cout << "Variable mise a jour.\n";
+        }
+    } else {
+        cout << "Entrez la valeur de la nouvelle variable : ";
+        cin >> valeur;
+        // Créer une nouvelle variable
+        Variable* nouvelleVariable = new Variable(nom, valeur);
+        variables[nb_variables] = nouvelleVariable;
+        nb_variables++;
+        cout << "Variable creee.\n";
+    }
 }
+
 
 

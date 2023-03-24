@@ -20,9 +20,6 @@ int main()
     Variable var;
     var.set_variable('x',12);
 
-    // Créer une copie de l'instance de Variable
-    Variable var2 = var.copy();
-
     // Créer une instance de Variable
     Variable var3;
     var3.set_variable('y',12);
@@ -30,19 +27,8 @@ int main()
     // Ajouter les variables à la liste
     variables[nb_variables] = &var;
     nb_variables++;
-    variables[nb_variables] = &var2;
-    nb_variables++;
     variables[nb_variables] = &var3;
     nb_variables++;
-
-    // Afficher la liste des variables
-    Variable::afficherVariables(variables, nb_variables);
-
-    // Ajouter une nouvelle variable
-    Variable::creerVariable(variables, nb_variables);
-
-    // Afficher la liste des variables mise à jour
-    Variable::afficherVariables(variables, nb_variables);
 
     // Ajouter une nouvelle variable
     Variable::creerVariable(variables, nb_variables);
