@@ -57,3 +57,66 @@
 	"Operateur.h"
 	<iostream>
 
+1679589250 source:d:\ce pc\onedrive - yncréa\bureau\cours_m1\c++\c-projet-expression-\src\addition.cpp
+	"Addition.h"
+	<iostream>
+
+1679589250 d:\ce pc\onedrive - yncréa\bureau\cours_m1\c++\c-projet-expression-\include\addition.h
+	<Operateur.h>
+
+1679589250 d:\ce pc\onedrive - yncréa\bureau\cours_m1\c++\c-projet-expression-\include\operateur.h
+	<Expression.h>
+
+1679589250 d:\ce pc\onedrive - yncréa\bureau\cours_m1\c++\c-projet-expression-\include\expression.h
+
+1679589250 source:d:\ce pc\onedrive - yncréa\bureau\cours_m1\c++\c-projet-expression-\src\constante.cpp
+	"Constante.h"
+	<iostream>
+
+1679589250 d:\ce pc\onedrive - yncréa\bureau\cours_m1\c++\c-projet-expression-\include\constante.h
+	<Expression.h>
+
+1679589250 source:d:\ce pc\onedrive - yncréa\bureau\cours_m1\c++\c-projet-expression-\src\division.cpp
+	"Division.h"
+	<iostream>
+
+1679589250 d:\ce pc\onedrive - yncréa\bureau\cours_m1\c++\c-projet-expression-\include\division.h
+	<Operateur.h>
+
+1679589250 source:d:\ce pc\onedrive - yncréa\bureau\cours_m1\c++\c-projet-expression-\src\expression.cpp
+	"Expression.h"
+	<iostream>
+
+1679589250 source:d:\ce pc\onedrive - yncréa\bureau\cours_m1\c++\c-projet-expression-\src\multiplication.cpp
+	"Multiplication.h"
+	<iostream>
+
+1679589250 d:\ce pc\onedrive - yncréa\bureau\cours_m1\c++\c-projet-expression-\include\multiplication.h
+	<Operateur.h>
+
+1679589250 source:d:\ce pc\onedrive - yncréa\bureau\cours_m1\c++\c-projet-expression-\src\operateur.cpp
+	"Operateur.h"
+	<iostream>
+
+1679589250 source:d:\ce pc\onedrive - yncréa\bureau\cours_m1\c++\c-projet-expression-\src\soustraction.cpp
+	"Soustraction.h"
+	<iostream>
+
+1679589250 d:\ce pc\onedrive - yncréa\bureau\cours_m1\c++\c-projet-expression-\include\soustraction.h
+	<Operateur.h>
+
+1679589718 source:d:\ce pc\onedrive - yncréa\bureau\cours_m1\c++\c-projet-expression-\main.cpp
+	<iostream>
+	"Multiplication.h"
+	"Addition.h"
+	"Constante.h"
+	"Division.h"
+	"Expression.h"
+	"Operateur.h"
+	"Soustraction.h"
+	"Variable.h"
+
+1679643472 d:\ce pc\onedrive - yncréa\bureau\cours_m1\c++\c-projet-expression-\include\variable.h
+	<iostream>
+	<Expression.h>
+
