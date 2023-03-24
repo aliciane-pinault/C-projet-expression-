@@ -13,31 +13,42 @@ using namespace std;
 
 int main()
 {
-
-    Constante c1(5), c2(2), c3(4), c4(-3), c5(20) ;
+    Variable* variables[100];
+    int nb_variables = 0;
 
     // Créer une instance de Variable
     Variable var;
     var.set_variable('x',12);
-    //var.afficher();
 
     // Créer une copie de l'instance de Variable
     Variable var2 = var.copy();
-    //var2.afficher();
 
     // Créer une instance de Variable
     Variable var3;
     var3.set_variable('y',12);
-    var3.afficher();
 
-    Constante c_var(var.get_value());
-    Constante c_var2(var2.get_value());
-    Constante c_var3(var3.get_value());
+    // Ajouter les variables à la liste
+    variables[nb_variables] = &var;
+    nb_variables++;
+    variables[nb_variables] = &var2;
+    nb_variables++;
+    variables[nb_variables] = &var3;
+    nb_variables++;
 
-    Addition addV(&c_var, &c_var3);
-    addV.afficher();
+    // Afficher la liste des variables
+    Variable::afficherVariables(variables, nb_variables);
 
+    // Ajouter une nouvelle variable
+    Variable::creerVariable(variables, nb_variables);
 
-    cout << endl;
+    // Afficher la liste des variables mise à jour
+    Variable::afficherVariables(variables, nb_variables);
+
+    // Ajouter une nouvelle variable
+    Variable::creerVariable(variables, nb_variables);
+
+    // Afficher la liste des variables mise à jour
+    Variable::afficherVariables(variables, nb_variables);
+
     return 0;
 }

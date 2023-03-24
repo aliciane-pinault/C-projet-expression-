@@ -105,7 +105,7 @@
 1679589250 d:\ce pc\onedrive - yncréa\bureau\cours_m1\c++\c-projet-expression-\include\soustraction.h
 	<Operateur.h>
 
-1679589718 source:d:\ce pc\onedrive - yncréa\bureau\cours_m1\c++\c-projet-expression-\main.cpp
+1679649541 source:d:\ce pc\onedrive - yncréa\bureau\cours_m1\c++\c-projet-expression-\main.cpp
 	<iostream>
 	"Multiplication.h"
 	"Addition.h"
@@ -116,7 +116,12 @@
 	"Soustraction.h"
 	"Variable.h"
 
-1679643472 d:\ce pc\onedrive - yncréa\bureau\cours_m1\c++\c-projet-expression-\include\variable.h
+1679649707 d:\ce pc\onedrive - yncréa\bureau\cours_m1\c++\c-projet-expression-\include\variable.h
 	<iostream>
 	<Expression.h>
+
+1679649530 source:d:\ce pc\onedrive - yncréa\bureau\cours_m1\c++\c-projet-expression-\src\variable.cpp
+	"Variable.h"
+	"Operateur.h"
+	<iostream>
 
