@@ -1,23 +1,13 @@
-#pragma once
-#include "OperateurUnaire.h"
+#ifndef INVERSE_H
+#define INVERSE_H
+
+#include "Operateur_Unaire.h"
 
 class Inverse : public OperateurUnaire {
 public:
-    Expression* calculer(Expression const& expr) override;
+    explicit Inverse(std::shared_ptr<Expression> expression);
+    double evaluer() const;
+    char symbole() const;
 };
 
-class InverseExpression : public Expression {
-public:
-    InverseExpression(double base);
-    double calculer() const override;
-    void afficher() const override;
-    void afficherNPI() const override;
-
-private:
-    double _base;
-};
-
-
-
-
-
+#endif

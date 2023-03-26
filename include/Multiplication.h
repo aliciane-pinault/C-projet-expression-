@@ -1,19 +1,15 @@
-#pragma once
-#include "OperateurBinaire.h"
-#include "Expression.h"
+#ifndef MULTIPLICATION_H
+#define MULTIPLICATION_H
 
-class MultiplicationExpression : public Expression {
-public:
-    MultiplicationExpression(double produit);
-    double calculer() const override;
-    void afficher() const override;
-    void afficherNPI() const override;
-
-private:
-    double _produit;
-};
+#include "Operateur_Binaire.h"
 
 class Multiplication : public OperateurBinaire {
 public:
-    Expression* calculer(Expression const& expr1, Expression const& expr2) override;
+    Multiplication(std::shared_ptr<Expression> gauche, std::shared_ptr<Expression> droite);
+    double evaluer() const override;
+
+protected:
+    char symbole() const override;
 };
+
+#endif

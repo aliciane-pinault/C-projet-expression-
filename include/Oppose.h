@@ -1,22 +1,13 @@
-#pragma once
-#include "OperateurUnaire.h"
+#ifndef OPPOSE_H
+#define OPPOSE_H
+
+#include "Operateur_Unaire.h"
 
 class Oppose : public OperateurUnaire {
 public:
-    Expression* calculer(Expression const& expr) override;
+    explicit Oppose(std::shared_ptr<Expression> expression);
+    double evaluer() const;
+    char symbole() const;
 };
 
-class OpposeExpression : public Expression {
-public:
-    OpposeExpression(double base);
-    double calculer() const override;
-    void afficher() const override;
-    void afficherNPI() const override;
-
-private:
-    double _base;
-};
-
-
-
-
+#endif

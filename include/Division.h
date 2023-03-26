@@ -1,20 +1,15 @@
-#pragma once
-#include "OperateurBinaire.h"
-#include "Expression.h"
+#ifndef DIVISION_H
+#define DIVISION_H
 
-class DivisionExpression : public Expression {
-public:
-    DivisionExpression(double quotient);
-    double calculer() const override;
-    void afficher() const override;
-    void afficherNPI() const override;
-
-private:
-    double _quotient;
-};
+#include "Operateur_Binaire.h"
 
 class Division : public OperateurBinaire {
 public:
-    Expression* calculer(Expression const& expr1, Expression const& expr2) override;
+    Division(std::shared_ptr<Expression> gauche, std::shared_ptr<Expression> droite);
+    double evaluer() const override;
+
+protected:
+    char symbole() const override;
 };
 
+#endif

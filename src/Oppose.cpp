@@ -1,23 +1,12 @@
-// src/oppose.cpp
+#include "Oppose.h"
 
-#include "oppose.h"
+Oppose::Oppose(std::shared_ptr<Expression> expression)
+    : OperateurUnaire(expression) {}
 
-Expression* Oppose::calculer(Expression const& expr) {
-    double base = expr.valeur();
-    return new OpposeExpression(base);
+double Oppose::evaluer() const {
+    return -expression_->evaluer();
 }
 
-OpposeExpression::OpposeExpression(double base) : Expression(0), _base(base) {}
-
-double OpposeExpression::calculer() const {
-    return -_base;
+char Oppose::symbole() const {
+    return '-';
 }
-
-void OpposeExpression::afficher() const {
-    std::cout << "(-" << _base << ")";
-}
-
-void OpposeExpression::afficherNPI() const {
-    std::cout << _base << " opp";
-}
-

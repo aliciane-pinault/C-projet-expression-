@@ -1,18 +1,15 @@
-#pragma once
-#include "OperateurBinaire.h"
+#ifndef ADDITION_H
+#define ADDITION_H
+
+#include "Operateur_Binaire.h"
 
 class Addition : public OperateurBinaire {
 public:
-    Expression* calculer(Expression const& expr1, Expression const& expr2) override;
+    Addition(std::shared_ptr<Expression> gauche, std::shared_ptr<Expression> droite);
+    double evaluer() const override;
+
+protected:
+    char symbole() const override;
 };
 
-class AdditionExpression : public Expression {
-public:
-    AdditionExpression(double sum);
-    double calculer() const override;
-    void afficher() const override;
-    void afficherNPI() const override;
-
-private:
-    double _sum;
-};
+#endif

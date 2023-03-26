@@ -1,23 +1,13 @@
-#include <cmath>
 #include "Carre.h"
 
-Expression* Carre::calculer(Expression const& expr) {
-    double base = expr.valeur();
-    return new CarreExpression(base);
+Carre::Carre(std::shared_ptr<Expression> expression)
+    : OperateurUnaire(expression) {}
+
+double Carre::evaluer() const {
+    double valeur = expression_->evaluer();
+    return valeur * valeur;
 }
 
-CarreExpression::CarreExpression(double base) : Expression(0), _base(base) {}
-
-double CarreExpression::calculer() const {
-    return _base * _base;
+char Carre::symbole() const {
+    return 'C'; // Utilisons 'C' pour représenter le carré
 }
-
-void CarreExpression::afficher() const {
-    std::cout << "(" << _base << "^2)";
-}
-
-void CarreExpression::afficherNPI() const {
-    std::cout << _base << " 2 ^";
-}
-
-

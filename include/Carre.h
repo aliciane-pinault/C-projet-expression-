@@ -1,26 +1,13 @@
-#pragma once
-#include "OperateurUnaire.h"
+#ifndef CARRE_H
+#define CARRE_H
+
+#include "Operateur_Unaire.h"
 
 class Carre : public OperateurUnaire {
 public:
-    Expression* calculer(Expression const& expr) override;
+    explicit Carre(std::shared_ptr<Expression> expression);
+    double evaluer() const;
+    char symbole() const;
 };
 
-class CarreExpression : public Expression {
-public:
-    CarreExpression(double base);
-    double calculer() const override;
-    void afficher() const override;
-    void afficherNPI() const override;
-
-private:
-    double _base;
-};
-
-
-
-
-
-
-
-
+#endif

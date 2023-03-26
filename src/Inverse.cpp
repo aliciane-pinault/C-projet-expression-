@@ -1,25 +1,12 @@
-// src/inverse.cpp
+#include "Inverse.h"
 
-#include "inverse.h"
+Inverse::Inverse(std::shared_ptr<Expression> expression)
+    : OperateurUnaire(expression) {}
 
-Expression* Inverse::calculer(Expression const& expr) {
-    double base = expr.valeur();
-    return new InverseExpression(base);
+double Inverse::evaluer() const {
+    return 1.0 / expression_->evaluer();
 }
 
-InverseExpression::InverseExpression(double base) : Expression(0), _base(base) {}
-
-double InverseExpression::calculer() const {
-    return 1 / _base;
+char Inverse::symbole() const {
+    return 'I'; // Utilisons 'I' pour représenter l'inverse
 }
-
-void InverseExpression::afficher() const {
-    std::cout << "(1/" << _base << ")";
-}
-
-void InverseExpression::afficherNPI() const {
-    std::cout << _base << " inv";
-}
-
-
-

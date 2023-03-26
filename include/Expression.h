@@ -1,19 +1,15 @@
-// include/expression.h
+#ifndef EXPRESSION_H
+#define EXPRESSION_H
 
-#pragma once
 #include <iostream>
+#include <memory>
 
 class Expression {
 public:
     virtual ~Expression() = default;
-    virtual double calculer() const = 0;
-    virtual void afficher() const = 0;
-    virtual void afficherNPI() const = 0;
-    double valeur() const;
-
-protected:
-    Expression(double valeur);
-    double _valeur;
+    virtual double evaluer() const = 0;
+    virtual void afficher(std::ostream &os) const = 0;
+    virtual void afficherPolonaiseInverse(std::ostream &os) const = 0;
 };
 
-
+#endif
