@@ -57,3 +57,126 @@
 	"Operateur.h"
 	<iostream>
 
+1679683513 source:d:\isen\m1\s2\poo-c++\projet\c-projet-expression-\main.cpp
+	<iostream>
+	<limits>
+	<sstream>
+	"Expression.h"
+	"Carre.h"
+	"Inverse.h"
+	"Oppose.h"
+	"Nombre.h"
+	"ValeurAbsolue.h"
+	"LogNep.h"
+	"RacineCarree.h"
+	"Puissance.h"
+	"Addition.h"
+	"Soustraction.h"
+	"Multiplication.h"
+	"Division.h"
+
+1679683513 d:\isen\m1\s2\poo-c++\projet\c-projet-expression-\include\expression.h
+	<iostream>
+
+1679683513 d:\isen\m1\s2\poo-c++\projet\c-projet-expression-\include\carre.h
+	"OperateurUnaire.h"
+
+1679683513 d:\isen\m1\s2\poo-c++\projet\c-projet-expression-\include\operateurunaire.h
+	"Expression.h"
+
+1679683513 d:\isen\m1\s2\poo-c++\projet\c-projet-expression-\include\inverse.h
+	"OperateurUnaire.h"
+
+1679683513 d:\isen\m1\s2\poo-c++\projet\c-projet-expression-\include\oppose.h
+	"OperateurUnaire.h"
+
+1679683513 d:\isen\m1\s2\poo-c++\projet\c-projet-expression-\include\nombre.h
+	"Expression.h"
+
+1679683513 d:\isen\m1\s2\poo-c++\projet\c-projet-expression-\include\valeurabsolue.h
+	"OperateurUnaire.h"
+
+1679683513 d:\isen\m1\s2\poo-c++\projet\c-projet-expression-\include\lognep.h
+	"OperateurUnaire.h"
+
+1679683513 d:\isen\m1\s2\poo-c++\projet\c-projet-expression-\include\racinecarree.h
+	"OperateurUnaire.h"
+
+1679683513 d:\isen\m1\s2\poo-c++\projet\c-projet-expression-\include\puissance.h
+	"OperateurBinaire.h"
+
+1679683513 d:\isen\m1\s2\poo-c++\projet\c-projet-expression-\include\operateurbinaire.h
+	"Expression.h"
+
+1679683513 d:\isen\m1\s2\poo-c++\projet\c-projet-expression-\include\addition.h
+	"OperateurBinaire.h"
+
+1679683513 d:\isen\m1\s2\poo-c++\projet\c-projet-expression-\include\soustraction.h
+	"OperateurBinaire.h"
+	"Expression.h"
+
+1679683513 d:\isen\m1\s2\poo-c++\projet\c-projet-expression-\include\multiplication.h
+	"OperateurBinaire.h"
+	"Expression.h"
+
+1679683513 d:\isen\m1\s2\poo-c++\projet\c-projet-expression-\include\division.h
+	"OperateurBinaire.h"
+	"Expression.h"
+
+1679683513 source:d:\isen\m1\s2\poo-c++\projet\c-projet-expression-\src\addition.cpp
+	"Addition.h"
+
+1679683513 source:d:\isen\m1\s2\poo-c++\projet\c-projet-expression-\src\carre.cpp
+	<cmath>
+	"Carre.h"
+
+1679683513 source:d:\isen\m1\s2\poo-c++\projet\c-projet-expression-\src\division.cpp
+	"Division.h"
+	<iostream>
+
+1679683513 source:d:\isen\m1\s2\poo-c++\projet\c-projet-expression-\src\expression.cpp
+	"expression.h"
+
+1679683513 source:d:\isen\m1\s2\poo-c++\projet\c-projet-expression-\src\inverse.cpp
+	"inverse.h"
+
+1679683513 source:d:\isen\m1\s2\poo-c++\projet\c-projet-expression-\src\lognep.cpp
+	<cmath>
+	"LogNep.h"
+
+1679683513 source:d:\isen\m1\s2\poo-c++\projet\c-projet-expression-\src\multiplication.cpp
+	"Multiplication.h"
+	<iostream>
+
+1679683513 source:d:\isen\m1\s2\poo-c++\projet\c-projet-expression-\src\nombre.cpp
+	"Nombre.h"
+
+1679683513 source:d:\isen\m1\s2\poo-c++\projet\c-projet-expression-\src\operateurbinaire.cpp
+
+1679683513 source:d:\isen\m1\s2\poo-c++\projet\c-projet-expression-\src\operateurunaire.cpp
+
+1679683513 source:d:\isen\m1\s2\poo-c++\projet\c-projet-expression-\src\oppose.cpp
+	"oppose.h"
+
+1679683513 source:d:\isen\m1\s2\poo-c++\projet\c-projet-expression-\src\puissance.cpp
+	<cmath>
+	"Puissance.h"
+
+1679683513 source:d:\isen\m1\s2\poo-c++\projet\c-projet-expression-\src\racinecarree.cpp
+	<cmath>
+	"RacineCarree.h"
+
+1679683513 source:d:\isen\m1\s2\poo-c++\projet\c-projet-expression-\src\resultexpression.cpp
+	"ResultExpression.h"
+
+1679683513 d:\isen\m1\s2\poo-c++\projet\c-projet-expression-\include\resultexpression.h
+	"Expression.h"
+
+1679683513 source:d:\isen\m1\s2\poo-c++\projet\c-projet-expression-\src\soustraction.cpp
+	"Soustraction.h"
+	<iostream>
+
+1679683513 source:d:\isen\m1\s2\poo-c++\projet\c-projet-expression-\src\valeurabsolue.cpp
+	<cmath>
+	"ValeurAbsolue.h"
+
