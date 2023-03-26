@@ -1,55 +1,32 @@
 #include <iostream>
-#include <memory>
-#include "Constante.h"
-#include "Addition.h"
-#include "Soustraction.h"
-#include "Multiplication.h"
-#include "Division.h"
-#include "Puissance.h"
-#include "Racine_Carree.h"
-#include "Carre.h"
-#include "Oppose.h"
-#include "Inverse.h"
+#include <string>
+#include "Expression_Parser.h"
 
 int main() {
-    auto expression = std::make_shared<Addition>(
-        std::make_shared<Multiplication>(
-            std::make_shared<Constante>(2),
-            std::make_shared<Inverse>(
-                std::make_shared<Constante>(4)
-            )
-        ),
-        std::make_shared<Soustraction>(
-            std::make_shared<Division>(
-                std::make_shared<Constante>(9),
-                std::make_shared<Constante>(3)
-            ),
-            std::make_shared<Puissance>(
-                std::make_shared<Constante>(3),
-                std::make_shared<RacineCarree>(
-                    std::make_shared<Constante>(4)
-                )
-            )
-        )
-    );
+    std::string input;
 
-    auto expression_finale = std::make_shared<Carre>(
-        std::make_shared<Oppose>(
-            expression
-        )
-    );
+    std::cout << "Entrez une expression en notation polonaise inverse: ";
+    std::getline(std::cin, input);
 
-    std::cout << "Expression: ";
-    expression_finale->afficher(std::cout);
-    std::cout << std::endl;
-    std::cout << "Expression en notation polonaise inverse: ";
-    expression_finale->afficherPolonaiseInverse(std::cout);
-    std::cout << std::endl;
+    try {
+        auto expression = parse_expression(input);
 
-    std::cout << "Evaluation: " << expression_finale->evaluer() << std::endl;
+        std::cout << "Expression: ";
+        expression->afficher(std::cout);
+        std::cout << std::endl;
+
+        std::cout << "Expression en notation polonaise inverse: ";
+        expression->afficherPolonaiseInverse(std::cout);
+        std::cout << std::endl;
+
+        std::cout << "Evaluation: " << expression->evaluer() << std::endl;
+    } catch (const std::runtime_error& e) {
+        std::cerr << "Erreur: " << e.what() << std::endl;
+    }
 
     return 0;
 }
+
 
    
 
