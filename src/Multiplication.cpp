@@ -1,24 +1,12 @@
 #include "Multiplication.h"
-#include <iostream>
 
-MultiplicationExpression::MultiplicationExpression(double produit) : Expression(0), _produit(produit) {}
+Multiplication::Multiplication(std::shared_ptr<Expression> gauche, std::shared_ptr<Expression> droite)
+    : OperateurBinaire(gauche, droite) {}
 
-double MultiplicationExpression::calculer() const {
-    return _produit;
+double Multiplication::evaluer() const {
+    return gauche_->evaluer() * droite_->evaluer();
 }
 
-void MultiplicationExpression::afficher() const {
-    std::cout << "(" << _produit << ")";
+char Multiplication::symbole() const {
+    return '*';
 }
-
-void MultiplicationExpression::afficherNPI() const {
-    std::cout << _produit;
-}
-
-Expression* Multiplication::calculer(Expression const& expr1, Expression const& expr2) {
-    double val1 = expr1.valeur();
-    double val2 = expr2.valeur();
-    double result = val1 * val2;
-    return new MultiplicationExpression(result);
-}
-

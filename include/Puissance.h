@@ -1,19 +1,14 @@
-#pragma once
-#include "OperateurBinaire.h"
+#ifndef PUISSANCE_H
+#define PUISSANCE_H
+
+#include "Operateur_Binaire.h"
+#include <cmath>
 
 class Puissance : public OperateurBinaire {
 public:
-    Expression* calculer(Expression const& expr1, Expression const& expr2) override;
+    Puissance(std::shared_ptr<Expression> gauche, std::shared_ptr<Expression> droite);
+    double evaluer() const;
+    char symbole() const;
 };
 
-class PuissanceExpression : public Expression {
-public:
-    PuissanceExpression(double base, double exposant);
-    double calculer() const override;
-    void afficher() const override;
-    void afficherNPI() const override;
-
-private:
-    double _base;
-    double _exposant;
-};
+#endif

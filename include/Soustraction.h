@@ -1,22 +1,15 @@
-#pragma once
-#include "OperateurBinaire.h"
-#include "Expression.h"
+#ifndef SOUSTRACTION_H
+#define SOUSTRACTION_H
 
-class SoustractionExpression : public Expression {
-public:
-    SoustractionExpression(double difference);
-    double calculer() const override;
-    void afficher() const override;
-    void afficherNPI() const override;
-
-private:
-    double _difference;
-};
+#include "Operateur_Binaire.h"
 
 class Soustraction : public OperateurBinaire {
 public:
-    Expression* calculer(Expression const& expr1, Expression const& expr2) override;
+    Soustraction(std::shared_ptr<Expression> gauche, std::shared_ptr<Expression> droite);
+    double evaluer() const override;
+
+protected:
+    char symbole() const override;
 };
 
-
-
+#endif
