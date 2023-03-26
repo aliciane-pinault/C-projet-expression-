@@ -9,6 +9,8 @@
 #include "Carre.h"
 #include "Oppose.h"
 #include "Inverse.h"
+#include "Log_Nep.h"
+#include "Valeur_Absolue.h"
 #include <sstream>
 #include <stack>
 
@@ -51,9 +53,14 @@ std::shared_ptr<Expression> parse_expression(const std::string& input) {
                 stack.push(std::make_shared<Oppose>(right));
             } else if (token == "inverse") {
                 stack.push(std::make_shared<Inverse>(right));
+            } else if (token == "lognep") {
+            stack.push(std::make_shared<LogNep>(right));
+            } else if (token == "abs") {
+            stack.push(std::make_shared<ValeurAbsolue>(right));
             } else {
-                throw std::runtime_error("Opérateur inconnu: " + token);
+            throw std::runtime_error("Opérateur inconnu: " + token);
             }
+
         }
     }
 
