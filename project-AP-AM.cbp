@@ -35,20 +35,38 @@
 			<Add option="-fexceptions" />
 		</Compiler>
 		<Unit filename="include/Addition.h" />
+		<Unit filename="include/Carre.h" />
 		<Unit filename="include/Constante.h" />
 		<Unit filename="include/Division.h" />
 		<Unit filename="include/Expression.h" />
+		<Unit filename="include/Expression_Parser.h" />
+		<Unit filename="include/Inverse.h" />
+		<Unit filename="include/Log_Nep.h" />
 		<Unit filename="include/Multiplication.h" />
-		<Unit filename="include/Operateur.h" />
+		<Unit filename="include/Operateur_Binaire.h" />
+		<Unit filename="include/Operateur_Unaire.h" />
+		<Unit filename="include/Oppose.h" />
+		<Unit filename="include/Puissance.h" />
+		<Unit filename="include/Racine_Carree.h" />
 		<Unit filename="include/Soustraction.h" />
+		<Unit filename="include/Valeur_Absolue.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/Addition.cpp" />
+		<Unit filename="src/Carre.cpp" />
 		<Unit filename="src/Constante.cpp" />
 		<Unit filename="src/Division.cpp" />
 		<Unit filename="src/Expression.cpp" />
+		<Unit filename="src/Expression_Parser.cpp" />
+		<Unit filename="src/Inverse.cpp" />
+		<Unit filename="src/Log_Nep.cpp" />
 		<Unit filename="src/Multiplication.cpp" />
-		<Unit filename="src/Operateur.cpp" />
+		<Unit filename="src/Operateur_Binaire.cpp" />
+		<Unit filename="src/Operateur_Unaire.cpp" />
+		<Unit filename="src/Oppose.cpp" />
+		<Unit filename="src/Puissance.cpp" />
+		<Unit filename="src/Racine_Carree.cpp" />
 		<Unit filename="src/Soustraction.cpp" />
+		<Unit filename="src/Valeur_Absolue.cpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>
